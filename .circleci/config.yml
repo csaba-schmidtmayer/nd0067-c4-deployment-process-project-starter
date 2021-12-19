@@ -22,19 +22,10 @@ jobs:
     steps:
       - checkout:
           path: ~/project
-      - node/install
-      - run:
-          name: Install backend dependencies
-          command: |
-            npm install
-      - run:
-          name: Build backend
-          command: npm run build
       - eb/setup
       - run:
           name: Deploy backend to Elastic Beanstalk
           command: |
-            cd www
             eb init --region $AWS_DEFAULT_REGION --platform node.js $AWS_EB_BACKEND
             eb deploy
   frontend:
@@ -58,4 +49,4 @@ jobs:
       - run:
           name: Deploy frontend to S3 bucket
           command: |
-            aws s3 cp --recursive --acl public-read ./www $AWS_S3_FRONTEND 
+            aws s3 cp --recursive --acl public-read ./www $AWS_S3_FRONTEND

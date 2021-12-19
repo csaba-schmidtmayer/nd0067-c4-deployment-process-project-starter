@@ -22,6 +22,14 @@ jobs:
     steps:
       - checkout:
           path: ~/project
+      - node/install
+      - run:
+          name: Install backend dependencies
+          command: |
+            npm install
+      - run:
+          name: Build backend
+          command: npm run build
       - eb/setup
       - run:
           name: Deploy backend to Elastic Beanstalk

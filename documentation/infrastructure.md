@@ -1,6 +1,6 @@
 # Project deployment infrastructure
 
-The project uses Amazon Web Services (AWS) as a platform for deployment. The application can be accessed through [this link](https://eu-schmiczy-udagram-frontend.s3.amazonaws.com/index.html).
+The project uses Amazon Web Services (AWS) as a platform for deployment. The application can be accessed through [this link](http://eu-schmiczy-udagram-frontend.s3.amazonaws.com/index.html).
 
 ## Services
 

@@ -58,4 +58,4 @@ jobs:
       - run:
           name: Deploy frontend to S3 bucket
           command: |
-            aws s3 cp --recursive ./www $AWS_S3_FRONTEND 
+            aws s3 cp --recursive --acl public-read ./www $AWS_S3_FRONTEND 

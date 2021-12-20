@@ -1,5 +1,7 @@
 # Project CD pipeline
 
+[![csaba-schmidtmayer](https://circleci.com/gh/csaba-schmidtmayer/nd0067-c4-deployment-process-project-starter/tree/master.svg?style=svg)](https://circleci.com/gh/csaba-schmidtmayer/nd0067-c4-deployment-process-project-starter/?branch=master)
+
 The project uses CircleCI to automatically deploy the application to AWS whenever a commit is pushed to the Github repository.
 
 The following figure shows a high-level overview of the pipeline.

@@ -11,8 +11,14 @@ orbs:
 workflows:
   backend_frontend:
     jobs:
-      - backend
-      - frontend
+      - backend:
+          filters:
+            branches:
+              only: master
+      - frontend:
+          filters:
+            branches:
+              only: master
 
 jobs:
   backend:
